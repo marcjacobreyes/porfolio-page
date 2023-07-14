@@ -27,6 +27,20 @@ body {
     background-color: var(--black);
 }
 
+.source-code-container {
+    display: none;
+    background-color: var(--black);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.source-code {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+}
+
 .main{
     padding: 0 88px;
     position: relative;
