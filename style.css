@@ -75,7 +75,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 40px 0;
-}
+}    /* This is where the main css section ends*/
 
 .navbar .nav-links {
     padding-right: 160px;
@@ -104,7 +104,8 @@ body {
 .navbar .nav-btn.selected {
     border: 1px solid #ccc;
     border-radius: 8px;
-}
+} /* This is where the navbar at the top section ends*/
+
 
 .img-box.zoomed-in {
     position: fixed;
@@ -113,7 +114,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: 99;
-}
+} /* This is where the zoom in on the contact button stylization comes in */
 
 .navbar .logo {
     background: linear-gradient(95deg, var(--dark-green) 3.2%, #3b82f6 99.5%);
@@ -336,7 +337,7 @@ body {
 .coursework .items-box03 .item-container03 .item03 .bx{
     font-size: 38px;
     color: #eee;
-} /* end of projects */
+} /* This is where the coursework section ends */
 
 
 .get-started{
@@ -408,7 +409,7 @@ body {
 .get-started .items-box .item-container .item .bx{
     font-size: 38px;
     color: #eee;
-} /* end of get-started */
+} /* end of 'get-started' or the values section ends */
 
 .projects{
     margin-top: 10rem;
@@ -505,17 +506,20 @@ body {
     letter-spacing: 0.05em;
     color: #ccc;
 }
+/* This is where the main footer section ends  */
+
 
 .coursework, .get-started, .projects {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ccc;
 }
 
-.copyright p{
+.copyright p {
     font-size: 12px;
     line-height: 36px;
     color: #afafaf;
 }
 
+/* This is where the main media query starts for different sized mobile devices, tablets, and smaller computers */
 @media screen and (max-width: 1040px) {
     .top-container{
         flex-direction: column;
