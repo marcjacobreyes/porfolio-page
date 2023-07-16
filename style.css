@@ -252,6 +252,11 @@ body {
     font-size: 15px;
 }
 
+.likes a {
+    color: white;
+    text-decoration: none;
+}
+
 .top-container .img-box .likes .icon-box .bx { 
     font-size: 40px;
     margin-right: 5px;
