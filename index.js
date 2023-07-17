@@ -79,8 +79,7 @@ exploreCodeBtn.addEventListener("click", function () {
     
       // Start opening files in new tabs
       openFileInTab(0);
-  });
-  
+});
 
 // Add click event listener to the explore resume button
 exploreResumeBtn.addEventListener("click", function () {
@@ -92,3 +91,7 @@ function goBack() {
     window.history.back();
 } // end of goBack function
 
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
