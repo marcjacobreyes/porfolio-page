@@ -529,34 +529,43 @@ body {
 
 .scrollToTopButton {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
+    top: 20px;
+    left: 20px;
+    width: 400px;
     height: 40px;
-    background-color: var(--light-green);
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     display: none;
 }
-
+  
 .scrollToTopButton i {
     font-size: 24px;
     line-height: 40px;
     text-align: center;
 }
-
+  
 .scrollToTopButton:hover {
-    background-color: white;
+    background-color: #555;
 }
-
+  
 @media (max-width: 768px) {
-    .scrollToTopButton {
-        bottom: 10px;
-        right: 10px;
+    #scrollToTopButton {
+      bottom: 10px;
+      right: 10px;
     }
 }
+  
+  /* Updated styles for positioning near the top-left corner */
+  #scrollToTopButton {
+    top: 20px;
+    left: 20px;
+    bottom: auto;
+    right: auto;
+  }
+  
 
 /* This is where the main media query starts for different sized mobile devices, tablets, and smaller computers */
 @media screen and (max-width: 1040px) {

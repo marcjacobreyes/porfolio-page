@@ -1,3 +1,21 @@
+/**
+ * Functionality Overview:
+ *
+ * - Smooth Scroll: Click events are set up for scroll buttons to smoothly scroll to specific sections of the page.
+ *
+ * - Section Navigation: Buttons are configured to scroll to designated sections when clicked.
+ *   The "Contact Me" button also adds a class to zoom in on the profile card section.
+ *
+ * - Code Exploration: The "Explore Code" button opens multiple code files (JavaScript, HTML, CSS) in new tabs for exploration.
+ *
+ * - Resume Preview: The "Explore Resume" button opens the resume "MJRResumeFrontEnd.pdf" in a new tab.
+ *
+ * - Browser Navigation: The `goBack` function simulates the browser back button's functionality.
+ *
+ * - Scroll to Top: The `scrollToTop` function scrolls the page to the top when invoked.
+ */
+
+
 //Select the toggler
 const toggler = document.querySelector('.toggler');
  // Select the nav-menu
