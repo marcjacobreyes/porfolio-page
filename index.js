@@ -102,7 +102,7 @@ exploreCodeBtn.addEventListener("click", function () {
 // Add click event listener to the explore resume button
 exploreResumeBtn.addEventListener("click", function () {
     //Open the resume in a new tab
-    window.open("MJRResumeFrontEnd.pdf", "_blank");
+    window.open("Resume0724 - Copy.pdf", "_blank");
 });
 
 function goBack() { 
