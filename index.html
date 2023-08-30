@@ -1,237 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Responsive Portfolio Page</title>
-</head> <!-- end of head-->
-
-<body>
-    <div class="main">
-        <!-- Navbar -->
-        <div class="navbar">
-            <a href="#" class="logo">Marc Jacob Reyes</a>
-            <div class="nav-links">
-                <span id="scroll" class="item selected">Home</span>
-                <span  id="scroll02" class="item">Relevant Coursework</span>
-                <span id="scroll03" class="item">Values</span>
-            </div>
-            <div class="nav-buttons" id="navMenu">
-                <button id="projects-btn" class="nav-btn selected">PROJECTS</button>
-                <button id="contact-btn" class="nav-btn">CONTACT ME</button>
-            </div>
-            <button class="toggler">
-                <i class='bx bx-menu'></i>
-            </button>
-        </div> <!-- End of Navbar -->
-
-        <!-- Top Container-->
-        <div class="top-container">
-            <div class="info-box">
-                <p class="header">
-                    University of Texas at San Antonio graduate with a Bachelor in Computer
-                    Information Systems, possessing a strong
-                    background in Cloud Computing, IT,
-                    Systems Analysis/Design, and Software
-                    Development. Seeking a software
-                    developer opportunity in a technology focused company where I can contribute to the
-                    success of the organization.
-                </p>
-                <p class="info-text">
-                    AWS Certified Cloud Practitioner
-                </p>
-                <div class="info-buttons">
-                    <button id="exploreCode-btn" class="info-btn selected">Explore Code</button>
-                    <button id="exploreDiagrams-btn" class="info-btn nav-btn">Explore Diagrams </button>
-                    <button id="exploreResume-btn" class="info-btn nav-btn">Explore Resume</button>
-                </div>
-            </div> <!-- end of info-box div -->
-            <div class="img-box">
-                <img src="v226-ning-40-religion-a-job101.jpg" class="img-pic">
-                <div class="img-content">
-                    <div class="info">
-                        <img src="pieceOf8CoinTransparent.png" class="info-img">
-                        <div>
-                            <div class="likes">
-                                <div class="icon-box">
-                                    <i class='bx bxl-github'></i>
-                                    <a href="https://github.com/marcjacobreyes">github.com/marcjacobreyes</a>
-                                </div>
-                                <div class="icon-linkedin">
-                                    <i class='bx bxl-linkedin-square'></i>
-                                    <a href="https://www.linkedin.com/in/marcjacobreyes/">linkedin.com/in/marcjacobreyes/</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End of top container-->
-
-
-        <div class="coursework">
-            <p class="header03">RELEVANT COURSEWORK</p>
-            <p class="info-text03">These are the relevant courses I took while at UTSA</p>
-
-            <div class="items-box03">
-                <div class="item-container03">
-                    <div class="item03">
-                        <i class="bx bx-network-chart"></i>
-                    </div>
-                    <p>Systems Analysis & Design</p>
-                </div>
-                <div class="item-container03">
-                    <div class="item03">
-                        <i class='bx bx-cloud'></i>
-                    </div>
-                    <p>Cloud Computing</p>
-                </div>
-                <div class="item-container03">
-                    <div class="item03">
-                        <i class='bx bxs-data'></i>
-                    </div>
-                    <p>Database Management</p>
-                </div>
-                <div class="item-container03">
-                    <div class="item03">
-                        <i class='bx bx-devices'></i>
-                    </div>
-                    <p>Application Development</p>
-                </div>
-                <div class="item-container03">
-                    <div class="item03">
-                        <i class='bx bx-objects-vertical-center'></i>
-                    </div>
-                    <p>Object Oriented Programming</p>
-                </div>
-                <div class="item-container03">
-                    <div class="item03">
-                        <i class='bx bx-shield-quarter'></i>
-                    </div>
-                    <p>Operating Systems Security</p>
-                </div>
-                <div class="item-container03">
-                    <div class="item03">
-                        <i class='bx bx-book-reader'></i>
-                    </div>
-                    <p>Essentials of Technology Management</p>
-                </div>
-                <div class="item-container03">
-                    <div class="item03">
-                        <i class='bx bx-desktop'></i>
-                    </div>
-                    <p>Advanced Topics in Information Systems</p>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Marc J. Reyes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Marc Jacob Reyes</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
-        <button onclick="scrollToTop()" id="scrollToTopButton" title="Scroll to Top">
-            <i class="bx bx-chevron-up"></i>
-        </button>
-
-        <!-- Get Started-->
-        <div class="get-started">
-            <p class="header">VALUES</p>
-            <p class="info-text">Designing, Developing, Testing, and Maintaining Software Solutions</p>
-            <div class="items-box">
-                <div class="item-container">
-                    <div class="item">
-                        <i class='bx bx-check-shield'></i>
-                    </div>
-                    <p>Secure Data</p>
-                </div>
-                <div class="item-container">
-                    <div class="item">
-                        <i class='bx bx-universal-access'></i>
-                    </div>
-                    <p>Problems Made Easy</p>
-                </div>
-                <div class="item-container">
-                    <div class="item">
-                        <i class='bx bx-money'></i>
-                    </div>
-                    <p>Low Cost Web Solutions</p>
-                </div>
-                <div class="item-container">
-                    <div class="item">
-                        <i class='bx bx-rocket'></i>
-                    </div>
-                    <p>Lightning Quick & Scalable</p>
-                </div>
-            </div>
-        </div> <!-- end of get started -->
-
-        <button onclick="scrollToTop()" id="scrollToTopButton" title="Scroll to Top">
-            <i class="bx bx-chevron-up"></i>
-        </button>
-
-        <!-- Projects -->
-        <div class="projects">
-            <p class="header02">RELEVANT PROJECTS</p>
-            <p class="info-text02">Here are some solutions I have developed over the passed few years</p>
-            <div class="items-box02">
-                <div class="item-container02">
-                    <div class="item02">
-                        <img src="biweeklyTimeSheetCalcSnippet01.png" class="item02-img">
-                    </div>
-                    <p class = "item-text02">Biweekly Time Sheet Calculator</p>
-                </div>
-                <div class="item-container02">
-                    <div class="item02">
-                        <img src="internetSpeedTestSnippet01.png" class="item02-img">
-                    </div>
-                    <p class = "item-text02">Internet Speed Test</p>
-                </div>
-                <div class="item-container02">
-                    <div class="item02">
-                        <img src="qrCodeGenerator.png" class="item02-img">
-                    </div>
-                    <p class = "item-text02">QR Code Generator</p>
-                </div>
-                <div class="item-container02">
-                    <div class="item02">
-                        <img src="humanTimeCalcOfficialSnippetOFLoginPage01.png" class="item02-img">
-                    </div>
-                    <p class = "item-text02">Login Landing Page</p>
-                </div>
-            </div>
-        </div> <!-- end of projects -->
-
-        <button onclick="scrollToTop()" id="scrollToTopButton" title="Scroll to Top">
-            <i class="bx bx-chevron-up"></i>
-        </button>
-
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer-header">
-                <h1>Marc Jacob Reyes</h1>
-                <p>Software Developer</p>
-            </div>
-            <div class="footer-links">
-                <div class="link">
-                    <h5>Contact</h5>
-                    <p>Github - github.com/marcjacobreyes
-                        <a href="https://github.com/marcjacobreyes"> </a>
-                    </p>
-                    <p>LinkedIn - linkedin.com/in/marcjacobreyes
-                    </p>
-                </div>
-            </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-        <!-- End of Footer -->
-
-        <div class="copyright">
-            <p>Copyright 2023, Marc Jacob Reyes.</p>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/v226-ning-40-religion-a-job101.jpg" alt="yin-yang" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, my name is</p>
+        <h1 class="title">Marc Jacob Reyes</h1>
+        <p class="section__text__p2">Software Developer & Systems Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume082123.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-
-        <div id="source-code-container">
-            <pre id="source-code"></pre>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/marcjacobreyes'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/marcjacobreyes'"
+          />
         </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/headshot.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>5+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.B.A Computer Information Systems<br /> University of Texas at San Antonio</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              University of Texas at San Antonio graduate with a Bachelor's in Computer
+              Information Systems, possessing a strong background in Cloud
+              Computing, IT, Systems Analysis/Design, and Software Development.
+              Seeking a software developer opportunity in a technology focused company where I can 
+              contribute to the success of the organization.
 
-    </div> <!-- End of main -->
-    
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/marcjacobreyes/newTimeCalc'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://humantimecalc.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/marcjacobreyes/newTimeCalc/blob/master/indexForEmployeeScheduling.html'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kingmjr11@gmail.com">kingmjr11@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/marcjacobreyes">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Marc J. Reyes All Rights Reserved.</p>
+    </footer>
     <script src="index.js"></script>
-</body><!-- end of body -->
+  </body>
 </html>
