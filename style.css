@@ -14,7 +14,7 @@
   --light-purple: #f3f1ff; 
   --dark-orange: #d2781a;
   --light-orange: #fdf3eb;
-  --dark-blue: #2998ff;
+  --dark-blue: #62b3ff;
   --light-blue: #f0f7ff;
   --dark-red: #cf2e2e;
   --light-red: #ffe5e5;
@@ -25,7 +25,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--light-green);
+  background: var(--dark-blue);
 }
 
 html {
@@ -33,7 +33,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--black);
 }
 
 /* TRANSITION */
@@ -416,7 +416,7 @@ article .icon {
   justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: var(--light-green);
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
