@@ -191,7 +191,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  border-radius: 9px;
+  border-radius: 19px;
 }
 
 .section__text {
@@ -306,7 +306,7 @@ section {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 19px;
 }
 
 .arrow {
